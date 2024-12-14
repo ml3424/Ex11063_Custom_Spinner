@@ -5,19 +5,22 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#C7B0D5"
+    android:backgroundTint="#BFE9DC"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/tV_country"
-        android:layout_width="250dp"
-        android:layout_height="150dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="366dp"
-        android:layout_marginEnd="81dp"
-        android:layout_marginBottom="100dp"
+        android:layout_width="286dp"
+        android:layout_height="352dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="216dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="48dp"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spin" />
 

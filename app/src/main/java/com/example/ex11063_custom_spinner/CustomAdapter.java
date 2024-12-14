@@ -39,7 +39,7 @@ class customAdapter extends BaseAdapter {
         view = inflater.inflate(R.layout.custom_spin_layout, parent, false);
         ImageView img = (ImageView) view.findViewById(R.id.iV);
         TextView str = (TextView) view.findViewById(R.id.tV);
-        str.setText(countries[i].toString());
+        str.setText(countries[i].name + "\n" + countries[i].capital_city);
         img.setImageResource(countries[i].flag_img);
         return view;
     }
