@@ -8,13 +8,12 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class CustomAdapter extends BaseAdapter {
+class customAdapter extends BaseAdapter {
     private Context context;
     private LayoutInflater inflater;
     private Country[] countries;
 
-    public CustomAdapter (Context context, Country[] countries) {
-    }
+    public customAdapter (Context context, Country[] countries) {
         this.context = context;
         this.countries = countries;
         this.inflater = LayoutInflater.from(context);
@@ -37,10 +36,11 @@ public class CustomAdapter extends BaseAdapter {
 
     @Override
     public View getView(int i, View view, ViewGroup parent) {
-        view = inflater.inflate(R.layout.custom_spin_layout, parent, false); ImageView img = (ImageView) view.findViewById(R.id.iv);
+        view = inflater.inflate(R.layout.custom_spin_layout, parent, false);
+        ImageView img = (ImageView) view.findViewById(R.id.iV);
         TextView str = (TextView) view.findViewById(R.id.tV);
-        str.setText();
-        img.setImageResource(countries[i]);
+        str.setText(countries[i].toString());
+        img.setImageResource(countries[i].flag_img);
         return view;
     }
 }
